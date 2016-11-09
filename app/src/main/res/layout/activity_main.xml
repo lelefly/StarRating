@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
     <com.le.star.StarRatingView
+        android:id="@+id/srv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         star:stat_on="@drawable/frodo_rate_star_big_on_holo_light"
@@ -19,5 +20,11 @@
         >
     </com.le.star.StarRatingView>
 
-
+<Button
+    android:id="@+id/btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:text="click"
+    />
 </RelativeLayout>
