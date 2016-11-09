@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:star="http://schemas.android.com/apk/res/com.le.star"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.le.star.MainActivity">
-
-    <TextView
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <com.le.star.StarRatingView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        star:stat_on="@drawable/frodo_rate_star_big_on_holo_light"
+        star:stat_off="@drawable/frodo_rate_star_big_off_holo_light"
+        star:stat_half="@drawable/frodo_rate_star_big_half_holo_light"
+        star:star_padding="10dp"
+        star:ratable="true"
+        >
+    </com.le.star.StarRatingView>
+
+
 </RelativeLayout>
